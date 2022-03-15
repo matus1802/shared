@@ -1,14 +1,21 @@
 {
-  "name": "@mat.kramarik/shared",
+  "name": "@matus1802/shared",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc"
   },
   "author": "mat.kramarik",
   "license": "ISC",
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/mat.kramarik"
-  }
+    "registry": "https://npm.pkg.github.com/matus1802"
+  },
+  "devDependencies": {
+    "typescript": "^4.6.2"
+  },
+  "files": [
+    "lib/**/*"
+  ]
 }
