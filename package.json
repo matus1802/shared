@@ -1,8 +1,8 @@
 {
   "name": "@matus1802/shared",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "version": "1.0.80",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc"
@@ -13,9 +13,15 @@
     "registry": "https://npm.pkg.github.com/matus1802"
   },
   "devDependencies": {
+    "ts-node": "^10.7.0",
     "typescript": "^4.6.2"
   },
   "files": [
     "lib/**/*"
-  ]
+  ],
+  "dependencies": {
+    "@nestjs/graphql": "^10.0.10",
+    "@nestjs/microservices": "^8.4.1",
+    "typeorm": "^0.2.45"
+  }
 }
